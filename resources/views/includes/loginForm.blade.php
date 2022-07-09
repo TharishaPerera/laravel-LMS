@@ -1,6 +1,6 @@
 <div class="form-group mb-3">
-    <label class="label" for="name">Username</label>
-    <input type="text" class="form-control" placeholder="Username" required>
+    <label class="label" for="email">Email Address</label>
+    <input type="email" class="form-control" placeholder="Email Address" required>
 </div>
 <div class="form-group mb-3">
     <label class="label" for="password">Password</label>
