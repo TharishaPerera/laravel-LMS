@@ -11,12 +11,13 @@
                     <div class="login-wrap p-4 p-md-5">
                         <div class="d-flex">
                             <div class="w-100">
-                                <h3 class="mb-4">Sign UP</h3>
+                                <h3 class="mb-4">Sign Up</h3>
                             </div>
                         </div>
                         <form action="#" class="signin-form">
                             @include('includes.signupForm')
                         </form>
+                        <p class="text-center">Have An Account?  <a data-toggle="tab" href="/lecturer">Log In</a></p>
                     </div>
                 </div>
             </div>
