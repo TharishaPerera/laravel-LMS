@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lecturer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class PagesController extends Controller
 {
@@ -16,7 +18,9 @@ class PagesController extends Controller
         $signup = array(
             'member' => 'Does Not Have An Account?   ',
             'signup' => 'Sign Up',
-            'image' => '../../images/lecturer.jpg'
+            'image' => '../../images/lecturer.jpg',
+            'action' => route('lecturer-login'),
+            'method' => 'post',
         );
         return view('pages.login')->with($signup);
     }
@@ -41,7 +45,25 @@ class PagesController extends Controller
 
     public function signup()
     {
-        $image = '../../images/signup.jpg';
-        return view('pages.signup')->with('image', $image);
+        $data = array(
+            'image' => '../../images/signup.jpg',
+            'action' => route('register-lecturer'),
+            'method' => 'post'
+        );
+        return view('pages.signup')->with($data);
+    }
+
+    public function forgotPassword()
+    {
+        $image = '../../images/forgotpw.jpg';
+        return view('pages.forgotpassword')->with('image', $image);
+    }
+
+    public function lecturerDashboard(){
+        $data = array();
+        if(Session::has('loginId')){
+             $data = Lecturer::where('id', '=', Session::get('loginId'))->first();
+        }
+        return view('pages.dashboard')->with('data', $data);
     }
 }

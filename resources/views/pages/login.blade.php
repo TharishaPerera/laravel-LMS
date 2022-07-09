@@ -14,7 +14,15 @@
                             <h3 class="mb-4">Sign In</h3>
                         </div>
                     </div>
-                    <form action="#" class="signin-form">
+                    <form action="{{$action}}" method="{{$method}}" class="signin-form">
+                        @if(\Illuminate\Support\Facades\Session::has('success'))
+                            <div class="alert alert-success">{{\Illuminate\Support\Facades\Session::get('success')}}</div>
+                        @endif
+                        @if(\Illuminate\Support\Facades\Session::has('fail'))
+                            <div class="alert alert-danger">{{\Illuminate\Support\Facades\Session::get('fail')}}</div>
+                        @endif
+
+                        @csrf
                         @include('includes.loginForm')
                     </form>
                     @if(!empty($member))

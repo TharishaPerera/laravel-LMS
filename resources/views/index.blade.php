@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    @if(\Illuminate\Support\Facades\Session::has('fail'))
+        <div class="alert alert-danger">{{\Illuminate\Support\Facades\Session::get('fail')}}</div>
+    @endif
     <div>
         <ul class="groups">
             <li>

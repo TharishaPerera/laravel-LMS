@@ -1,10 +1,12 @@
 <div class="form-group mb-3">
     <label class="label" for="email">Email Address</label>
-    <input type="email" class="form-control" placeholder="Email Address" required>
+    <input type="email" name="email" class="form-control" placeholder="Email Address" value="{{old('email')}}">
+    <span class="text-danger">@error('email') {{$message}} @enderror</span>
 </div>
 <div class="form-group mb-3">
     <label class="label" for="password">Password</label>
-    <input type="password" class="form-control" placeholder="Password" required>
+    <input type="password" name="password" class="form-control" placeholder="Password" >
+    <span class="text-danger">@error('password') {{$message}} @enderror</span>
 </div>
 <div class="form-group">
     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In
