@@ -1,14 +1,14 @@
-    <div class="footer">
-        <ul class="foote_bottom_ul_amrc">
-            <li><a href="/">Home</a></li>
-            <li><a href="/lecturer">Lecturer Login</a></li>
-            <li><a href="/dancing">Dancing Student Login</a></li>
-            <li><a href="/french">French Student Login</a></li>
-            <li><a href="/english">English Student Login</a></li>
-        </ul>
-        <!--foote_bottom_ul_amrc ends here-->
-        <p class="text-center">© <?php echo date("Y"); ?> Copyright | Designed by <a href="/">Tharisha Perera</a></p>
-    </div>
+{{--    <div class="footer">--}}
+{{--        <ul class="foote_bottom_ul_amrc">--}}
+{{--            <li><a href="/">Home</a></li>--}}
+{{--            <li><a href="/lecturer">Lecturer Login</a></li>--}}
+{{--            <li><a href="/dancing">Dancing Student Login</a></li>--}}
+{{--            <li><a href="/french">French Student Login</a></li>--}}
+{{--            <li><a href="/english">English Student Login</a></li>--}}
+{{--        </ul>--}}
+{{--        <!--foote_bottom_ul_amrc ends here-->--}}
+{{--        <p class="text-center">© <?php echo date("Y"); ?> Copyright | Designed by <a href="/">Tharisha Perera</a></p>--}}
+{{--    </div>--}}
 
     <!-- Scripts -->
     <script src="{{url('js/scripts.js')}}"></script>

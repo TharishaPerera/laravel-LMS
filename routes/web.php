@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Pages
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/lecturer', [PagesController::class, 'lecturerLogin']);
 Route::get('/dancing', [PagesController::class, 'dancingLogin']);
 Route::get('/french', [PagesController::class, 'frenchLogin']);
 Route::get('/english', [PagesController::class, 'englishLogin']);
+Route::get('/signup', [PagesController::class, 'signup']);
