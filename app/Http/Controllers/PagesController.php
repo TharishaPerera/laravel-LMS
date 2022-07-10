@@ -64,6 +64,6 @@ class PagesController extends Controller
         if(Session::has('loginId')){
              $data = Lecturer::where('id', '=', Session::get('loginId'))->first();
         }
-        return view('pages.dashboard')->with('data', $data);
+        return view('pages.dashboards.dashboard')->with('data', $data);
     }
 }

@@ -15,6 +15,7 @@
         <!-- Logins CSS -->
         <link rel="stylesheet" type="text/css" href="{{url('css/logins.css')}}">
 
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Bootstrap CSS only -->
