@@ -12,44 +12,44 @@
     </div>
 
     <!-- SIDEBAR START -->
-    <div class="sidebar">
-        <a href="#">
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="sidelink active">
             <span class="material-icons-sharp">dashboard</span>
             <h3>Dashboard</h3>
         </a>
-        <a href="#" class="active">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">group_add</span>
             <h3>Student Registration</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">manage_accounts</span>
             <h3>Update Student</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">person_remove</span>
             <h3>Delete Student</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">recent_actors</span>
             <h3>View Students</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">person_add_alt</span>
             <h3>Employee Registration</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">manage_accounts</span>
             <h3>Update Employees</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">person_remove</span>
             <h3>Delete Employees</h3>
         </a>
-        <a href="#">
+        <a href="#" class="sidelink">
             <span class="material-icons-sharp">recent_actors</span>
             <h3>View Employees</h3>
         </a>
-        <a href="logout">
+        <a href="logout" data-toggle="modal" data-target="logoutModal" class="sidelink">
             <span class="material-icons-sharp">logout</span>
             <h3>Logout</h3>
         </a>
@@ -57,3 +57,5 @@
     <!-- SIDEBAR END -->
 </aside>
 <!-- ASIDE END -->
+
+{{--@include('includes.modal')--}}

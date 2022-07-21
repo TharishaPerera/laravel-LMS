@@ -25,7 +25,7 @@ class LoggedInCheck
             url('signup') == $request->url()
             )
         ){
-            return back();
+            return back()->with('fail', 'User is already logged in');
         }
         return $next($request);
     }
