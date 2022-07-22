@@ -15,32 +15,44 @@ class PagesController extends Controller
 
     public function lecturerLogin()
     {
-        $signup = array(
+        $login = array(
             'member' => 'Does Not Have An Account?   ',
             'signup' => 'Sign Up',
             'image' => '../../images/lecturer.jpg',
             'action' => route('lecturer-login'),
             'method' => 'post',
         );
-        return view('pages.login')->with($signup);
+        return view('pages.login')->with($login);
     }
 
     public function dancingLogin()
     {
-        $image = '../../images/dancing.jpg';
-        return view('pages.login')->with('image', $image);
+        $login = array(
+            'image' => '../../images/dancing.jpg',
+            'action' => route('lecturer-login'),
+            'method' => 'post',
+        );
+        return view('pages.login')->with($login);
     }
 
     public function frenchLogin()
     {
-        $image = '../../images/french.jpg';
-        return view('pages.login')->with('image', $image);
+        $login = array(
+            'image' => '../../images/french.jpg',
+            'action' => route('lecturer-login'),
+            'method' => 'post',
+        );
+        return view('pages.login')->with($login);
     }
 
     public function englishLogin()
     {
-        $image = '../../images/english.jpg';
-        return view('pages.login')->with('image', $image);
+        $login = array(
+            'image' => '../../images/english.jpg',
+            'action' => route('lecturer-login'),
+            'method' => 'post',
+        );
+        return view('pages.login')->with($login);
     }
 
     public function signup()
