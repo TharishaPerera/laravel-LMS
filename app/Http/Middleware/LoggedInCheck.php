@@ -18,6 +18,7 @@ class LoggedInCheck
     public function handle(Request $request, Closure $next)
     {
         if(Session()->has('loginId') && (
+                url('/') == $request->url() ||
             url('lecturer') == $request->url() ||
             url('dancing') == $request->url() ||
             url('french') == $request->url() ||

@@ -59,4 +59,5 @@
             </li>
         </ul>
     </div>
+{{--    @include('includes.modals.logoutModal')--}}
 @endsection

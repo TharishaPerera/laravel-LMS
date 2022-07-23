@@ -9,6 +9,9 @@
     <!-- Dashboards CSS -->
     <link rel="stylesheet" type="text/css" href="{{url('css/dashboards.css')}}">
 
+    <!-- Modals CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url('css/modals.css')}}">
+
     <!-- MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 

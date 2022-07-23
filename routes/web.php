@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Pages
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->middleware('alreadyLoggedIn');
 Route::get('/lecturer', [PagesController::class, 'lecturerLogin'])->middleware('alreadyLoggedIn');
 Route::get('/dancing', [PagesController::class, 'dancingLogin'])->middleware('alreadyLoggedIn');
 Route::get('/french', [PagesController::class, 'frenchLogin'])->middleware('alreadyLoggedIn');

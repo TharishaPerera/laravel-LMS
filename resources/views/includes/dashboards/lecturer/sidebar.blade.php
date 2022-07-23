@@ -3,8 +3,9 @@
     <div class="top">
         <div class="logo">
             <img id="logo-img-black" src="{{url('../images/logo-black.png')}}" style="visibility: visible" alt="Logo">
-            <img id="logo-img-white" src="{{url('../images/logo-white.png')}}" style="visibility: hidden; position: absolute" alt="Logo">
-{{--            <h2>Logo Text</h2>--}}
+            <img id="logo-img-white" src="{{url('../images/logo-white.png')}}"
+                 style="visibility: hidden; position: absolute" alt="Logo">
+            {{--            <h2>Logo Text</h2>--}}
         </div>
         <div class="close" id="close-btn">
             <span class="material-icons-sharp">close</span>
@@ -49,7 +50,11 @@
             <span class="material-icons-sharp">recent_actors</span>
             <h3>View Employees</h3>
         </a>
-        <a href="logout" data-toggle="modal" data-target="logoutModal" class="sidelink">
+        {{--        <a href="logout" data-toggle="modal" data-target="#logoutModal" class="sidelink">--}}
+        {{--            <span class="material-icons-sharp">logout</span>--}}
+        {{--            <h3>Logout</h3>--}}
+        {{--        </a>--}}
+        <a data-modal-target="#modal" class="sidelink">
             <span class="material-icons-sharp">logout</span>
             <h3>Logout</h3>
         </a>
@@ -58,4 +63,4 @@
 </aside>
 <!-- ASIDE END -->
 
-{{--@include('includes.modal')--}}
+@include('includes.modals.logoutModal')
